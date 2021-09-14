@@ -13,7 +13,7 @@
     <header>
       <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo1" src="Img/secre.png"></a>
+          <a class="navbar-brand" href="index.php"><img class="logo1" src="Img/secre.png"></a>
           <img class="logo2" src="Img/logo.jpg">
         </div>
       </nav>
@@ -59,13 +59,13 @@
             <img id="img1" src="Img/Ley.jpg">
           </div>
           <div id="titulo">
-            <a href="#" class="div-h3"><h3>Leyes Vigentes</h3></a>
+            <a href=php/LeyesVigentes.php class="div-h3"><h3>Leyes Vigentes</h3></a>
           </div>
           <div id="contenido">
             <ul>
-              <a href="#" class="div-a"><li>Constitucion de la Republica de Honduras(1982)</li></a><br>
-              <a href="#" class="div-a"><li>Ley de Municipalidades(2020)</li></a><br>
-              <a href="#" class="div-a"><li>Ley del seguro social(2021)</li></a><br>
+              <a href="php/LeyesVigentes.php" class="div-a"><li>Constitucion de la Republica de Honduras(1982)</li></a><br>
+              <a href="php/LeyesVigentes.php" class="div-a"><li>Ley de Municipalidades(2020)</li></a><br>
+              <a href="php/LeyesVigentes.php" class="div-a"><li>Ley del seguro social(2021)</li></a><br>
             </ul>
           </div>
         </div>
@@ -93,6 +93,7 @@
 
 
     <div class="redes">
+
       <div class="social">
         <a href="#"><i class="fab fa-facebook fa-3x blueicon"></i></a>
         <a href="#"><i class="fab fa-twitter fa-3x twit"></i></a>
