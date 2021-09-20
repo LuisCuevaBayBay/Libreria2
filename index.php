@@ -5,6 +5,7 @@
     <title>Libreria Juridica Nacional</title>
     <link rel="stylesheet" href="css/estiloHome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/menu.js"></script>
   </head>
   <body>
 
@@ -37,10 +38,10 @@
           </li>
 
           <li class="menu_item"><a href="php/buscar.php" class="menu_link">Buscar <i class="fas fa-search"></i> </a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Backend</a></li>
+          <li class="menu_item"><a href="php/Backend/login.php" class="menu_link">Backend</a></li>
 
       </nav>
-      <script src="js/menu.js"></script>
+
 
 
 
@@ -54,14 +55,9 @@
 
       <div id="contenedor" class="clearfix">
 
-        <div id="left">
-          <div id="portada">
+        <div id="caja>
             <img id="img1" src="Img/Ley.jpg">
-          </div>
-          <div id="titulo">
             <a href=php/LeyesVigentes.php class="div-h3"><h3>Leyes Vigentes</h3></a>
-          </div>
-          <div id="contenido">
             <ul>
               <a href="php/LeyesVigentes.php" class="div-a"><li>Constitucion de la Republica de Honduras(1982)</li></a><br>
               <a href="php/LeyesVigentes.php" class="div-a"><li>Ley de Municipalidades(2020)</li></a><br>
@@ -71,20 +67,20 @@
         </div>
 
 
-        <div id="right">
-          <div id="portada">
+        <div class="caja">
+
             <img id="img" src="Img/leyes-honduras.jpg">
-          </div>
-          <div id="titulo">
+
+
             <h3><a href="#" class="div-h3">Leyes Antiguas</a></h3>
-          </div>
-          <div id="contenido">
+
+
             <ul>
               <li><a href="#" class="div-a">Constitucion de la Republica de Honduras(1894)</a></li><br>
               <li><a href="#" class="div-a">Codigo del Trabajo(1959)</a></li><br>
               <li><a href="#" class="div-a">Acuerdos de educacion publica(1960)</a></li><br>
             </ul>
-          </div>
+
         </div>
       </div>
 
