@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>National Legal Library</title>
+    <title>Bibliotheque Juridique Nationale</title>
     <link rel="stylesheet" href="../../css/estiloLeyes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
@@ -13,6 +13,7 @@
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.php"><img class="logo1" src="../../Img/secre.png"></a>
               <img class="logo2" src="../../Img/logo.jpg">
+
             </div>
           </nav>
         </header>
@@ -21,18 +22,18 @@
         <nav class="main-nav">
           <ul class="menu" id="menu">
             <li class="menu_item container-submenu">
-              <a href="#" class="menu_link" id="subMenuBtn">Language <i class="fas fa-angle-down"></i></a>
+              <a href="#" class="menu_link" id="subMenuBtn">Langage <i class="fas fa-angle-down"></i></a>
               <ul class="submenu">
-                <li class="menu_item"><a href="../../php/LeyesVigentes.php" class="menu_link">Spanish</a>
+                <li class="menu_item"><a href="../../php/LeyesVigentes.php" class="menu_link">Espagnol</a>
                 </li>
-                <li class="menu_item"><a href="LeyesVigentes.php" class="menu_link">English</a>
+                <li class="menu_item"><a href="../../en/php/LeyesVigentes.php" class="menu_link">Anglais</a>
                 </li>
-                <li class="menu_item"><a href="../../fr/php/LeyesVigentes.php" class="menu_link">French</a>
+                <li class="menu_item"><a href="LeyesVigentes.php" class="menu_link">Français</a>
                 </li>
               </ul>
             </li>
 
-            <li class="menu_item"><a href="buscar.php" class="menu_link">Search <i class="fas fa-search"></i> </a></li>
+            <li class="menu_item"><a href="buscar.php" class="menu_link">Chercher <i class="fas fa-search"></i> </a></li>
             <li class="menu_item"><a href="#" class="menu_link">Backend</a></li>
 
         </nav>
