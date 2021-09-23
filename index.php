@@ -13,7 +13,7 @@
     <header>
       <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo1" src="../Img/secre.png"></a>
+          <a class="navbar-brand" href="#"><img class="logo1" src="Img/secre.png"></a>
           <img class="logo2" src="Img/logo.jpg">
         </div>
       </nav>
@@ -33,7 +33,7 @@
             </ul>
           </li>
 
-          <li class="menu_item"><a href="php/buscar.php" class="menu_link">Search <i class="fas fa-search"></i> </a></li>
+          <li class="menu_item"><a href="php/buscarScreen.php" class="menu_link">Search <i class="fas fa-search"></i> </a></li>
           <li class="menu_item"><a href="#" class="menu_link">Backend</a></li>
         </ul>
       </nav>
@@ -59,9 +59,9 @@
           </div>
           <div id="contenido">
             <ul>
-              <a href="#" class="div-a"><li>Constitution of the Republic of Honduras(1982)</li></a><br>
-              <a href="#" class="div-a"><li>Municipalaties Law(2020)</li></a><br>
-              <a href="#" class="div-a"><li>Social Security Law(2021)</li></a><br>
+              <a href="#" class="div-a"><li>Constitucion de la Republica de Honduras(1982)</li></a><br>
+              <a href="#" class="div-a"><li>Ley de Municipalidades(2020)</li></a><br>
+              <a href="#" class="div-a"><li>Ley del Seguro Social(2021)</li></a><br>
             </ul>
           </div>
         </div>
@@ -69,16 +69,16 @@
 
         <div id="right">
           <div id="portada">
-            <img id="img" src="../Img/leyes-honduras.jpg">
+            <img id="img" src="Img/leyes-honduras.jpg">
           </div>
           <div id="titulo">
-            <h3><a href="#" class="div-h3">Ancient Laws</a></h3>
+            <h3><a href="#" class="div-h3">Leyes Antiguas</a></h3>
           </div>
           <div id="contenido">
             <ul>
-              <li><a href="#" class="div-a">Constitution of the Republic of Honduras(1894)</a></li><br>
-              <li><a href="#" class="div-a">Work code(1959)</a></li><br>
-              <li><a href="#" class="div-a">Public Education Agreements(1960)</a></li><br>
+              <li><a href="#" class="div-a">Constitucion de la Republica de Honduras(1894)</a></li><br>
+              <li><a href="#" class="div-a">Codigo del Trabajo(1959)</a></li><br>
+              <li><a href="#" class="div-a">Acuerdos de Educacion Publica(1960)</a></li><br>
             </ul>
           </div>
         </div>
