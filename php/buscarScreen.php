@@ -34,9 +34,7 @@
               <tr>
                 <td class="tabla_texto3" colspan="1" width="50%">
                   <nobr>
-                    "Del Siguiente "
-                    <u>t</u>
-                    "ipo de norma :"
+                    Seleccione el tipo de norma :
                   </nobr>
                 </td>
 
@@ -56,18 +54,91 @@
                 <td class="tabla_texto3" align="right" style="BORDER-RIGHT:0px;" colspan="1"
                 width="20%">
                     <nobr>
-                      <u>B</u>
-                      "uscar en :"
+                      Seleccione si desea buscar en Reforma o en la Ley Original:
                     </nobr>
                   </td>
-                  <tr>
                     <td class="tabla_texto2" align="left" colspan="1" width="70%">
                       <select class="" name="" title="Indique si es Reforma o la Version Original">
                         <option selected="selected" value="R">Reformas</option>
                         <option value="V">Version Original</option>
                       </select>
                     </td>
-                  </tr>
+              </tr>
+
+              <tr>
+                <td class="tabla_texto3" colspan="1" style="BORDER-RIGHT:0px; BORDER-TOP: 0px BORDER-BOTTOM:0px">
+                  <span title>
+                    <input type="radio" name="" value="TODAS" checked="checked">
+                  </span>
+                  <nobr>
+                    Todas Estas Palabras:
+                  </nobr>
+                </td>
+                <td class="tabla_texto2" colspan="1" rowspan="2">
+                  <span>
+                    <input type="text" name="" value="">
+                  </span>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td width="40%" class="tabla_texto3">
+                  <span title>
+                    <input type="radio" name="" value="EXACTA">
+                  </span>
+                  <nobr>
+                    Esta Frase Exacta:
+                  </nobr>
+                </td>
+
+              </tr>
+
+
+              <tr>
+                <td class="tabla_texto3" align="left" style="BORDER-RIGHT:0px" colspan="1" width="20%">
+                  <strong>Año(s)</strong>
+                </td>
+
+                <td class="tabla_texto2" align="left" style="BORDER-RIGHT:0px" colspan="1" width="20%">
+                  <u>Desde: &nbsp;</u>
+                  <input type="text" name="" value="" maxlength="4">
+                  <span>Hasta: &nbsp;</span>
+                  <input type="text" name="" value="">
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td class="tabla_texto3" align="right" style="BORDER-RIGHT:0px" colspan="1" width="20%">
+                  Como Maximo: &nbsp;
+
+                <select class="" name="">
+                  <option value="50" selected="selected">50 Resultados</option>
+                  <option value="100">100 Resultados</option>
+                  <option value="0">Todos los Resultados</option>
+                </select>
+                </td>
+                <td class="tabla_texto2" colspan="1" width="70%">
+                  <u>Ordenados por:</u>
+
+                  <select class="" name="">
+                    <option>Fecha</option>
+                    <option value="">Tipo</option>
+                  </select>
+
+                  <select class="" name="">
+                    <option value="">Ascendente</option>
+                    <option value="">Descendente</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="submit" name="" value="Buscar">
+                </td>
               </tr>
             </tbody>
           </table>
