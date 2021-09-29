@@ -39,6 +39,36 @@
         </nav>
         <script src="js/menu.js"></script>
 
+        <div id="mensaje-error">
+          <h1 id="titulo-error">Contenu non disponible en Français</h1>
+        </div>
+
+            <h1 class="titulo-middle">Lois en Vigueur</h1>
+
+
+        <div class="clearfix" id="contenedor">
+          <div id="left">
+            <div id="portada">
+              <img id="img1" src="../../Img/Ley.jpg">
+            </div>
+            <div class="contenido">
+              <a href="https://www.tsc.gob.hn/web/leyes/Decreto-7-2021.pdf"  id="link1" target="_blank"><b> Ley de la Agencia de Regulacion Sanitaria (ARSA) <i class="fas fa-download"></i></b></a>
+              <br>
+              <br>
+              <br>
+              <a href="https://45bd611a-9c3b-470e-bde1-16e0393d88eb.filesusr.com/ugd/564166_3f179d42b2a5402a8421d191f50c1639.pdf" target="_blank" id="link1"><b>Ley de uso obligatorio de mascarillas y aplicación Protocolo de Bioseguridad <i class="fas fa-download"></i></b></a>
+              <br>
+              <br>
+              <br><br>
+              <a href="https://45bd611a-9c3b-470e-bde1-16e0393d88eb.filesusr.com/ugd/564166_80609851e46a4b85a9c79bbbabf3e86a.pdf" id="link1" target="_blank"><b> Ley Especial de Aceleración Económica y Protección Social Frente a los Efectos del Coronavirus COVID-19 <i class="fas fa-download"></i></b></a>
+              <br>
+              <br><br><br>
+              <a href="#" id="link1" target="_blank"><b>Ley de Auxilio al Sector Productivo y a Los Trabajadores ante los efectos de la Pandemia provocada por el COVID-19​ <i class="fas fa-download"></i></b></a>
+              <br>
+              <br><br><br>
+            </div>
+          </div>
+        </div>
 
 
 
