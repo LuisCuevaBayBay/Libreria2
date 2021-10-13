@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Libreria Juridica Nacional</title>
-    <link rel="stylesheet" href="css/estiloHome.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   </head>
   <body>
 
@@ -19,37 +23,36 @@
       </nav>
     </header>
 
-<!-- Menu vertical con opciones-->
+      <!-- Menu vertical con opciones-->
+      <div class="pastel">
+        <nav class="menu" id="menu">
+          <ul class="lista">
+            <li><a href="index.php" class="adb"><i class="fas fa-home"></i>   Inicio</a></li>
+            <li><a href="#" class="adb"><i class="fas fa-globe-americas"></i>  Idioma</a>
+              <ul class="slide">
+                <li><a href="Index.php" class="adb">Español</a></li>
+                <li><a href="en/index.php" class="adb">Ingles</a></li>
+                <li><a href="fr/index.php" class="adb">Frances</a></li>
+              </ul>
+            </li>
+            <li><a href="php/buscarScreen.php" class="adb"><i class="fas fa-search"></i>  Buscar</a></li>
+            <li><a href="http://www.lagaceta.hn/index.php?option=com_flippingbook&view=book&id=1001&page=1&Itemid=109" class="adb" target="_blank"><i class="fas fa-newspaper"></i>  Diario Oficial La Gaceta</a></li>
+            <li><a href="https://www.sgjd.gob.hn/quienes-somos/informacion-institucional/marco-estrategico-mision-vision-y-objetivos" class="adb" target="_blank"><i  class="fas fa-info"></i>   Acerca de</a></li>
+          </ul>
 
-      <span class="nav-bar" id=""btnMenu><i class="fas fa-bars"></i> Menu</span>
-      <nav class="main-nav">
-        <ul class="menu" id="menu">
-          <li class="menu_item container-submenu">
-            <a href="#" class="menu_link submenu-btn">Lenguaje <i class="fas fa-angle-down"></i></a>
-            <ul class="submenu">
-              <li class="menu_item"><a href="index.php" class="menu_link">Español</a></li>
-              <li class="menu_item"><a href="en/index.php" class="menu_link">Ingles</a></li>
-              <li class="menu_item"><a href="fr/index.php" class="menu_link">Frances</a> </li>
-            </ul>
-          </li>
 
-          <li class="menu_item"><a href="php/buscarScreen.php" class="menu_link">Buscar <i class="fas fa-search"></i> </a></li>
-          <li class="menu_item"><a href="Backend/login.php" class="menu_link">Backend</a></li>
-        </ul>
-      </nav>
-      <script type="text/javascript">
+        </nav>
 
-      </script>
+
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      </div>
 
 
       <!-- Columnas Librerias -->
-
-
       <h1 class="titulo-middle">Informacion Legal</h1>
-
-
       <div id="contenedor" class="clearfix">
-
         <div id="left">
           <div id="portada">
             <img id="img1" src="Img/Ley.jpg">
@@ -82,6 +85,7 @@
             </ul>
           </div>
         </div>
+
       </div>
 
 

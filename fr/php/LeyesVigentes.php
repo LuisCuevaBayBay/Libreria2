@@ -1,98 +1,191 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Bibliotheque Juridique Nationale</title>
-    <link rel="stylesheet" href="../../css/estiloLeyes.css">
+    <title>Libreria Juridica Nacional</title>
+    <link rel="stylesheet" href="../css/estiloLeyes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
 
-        <header>
-          <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.php"><img class="logo1" src="../../Img/secre.png"></a>
-              <img class="logo2" src="../../Img/logo.jpg">
+    <!-- Barra superior con logos -->
 
-            </div>
-          </nav>
-        </header>
-
-        <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"></i> Menu</span>
-        <nav class="main-nav">
-          <ul class="menu" id="menu">
-            <li class="menu_item container-submenu">
-              <a href="#" class="menu_link" id="subMenuBtn">Langage <i class="fas fa-angle-down"></i></a>
-              <ul class="submenu">
-                <li class="menu_item"><a href="../../php/LeyesVigentes.php" class="menu_link">Espagnol</a>
-                </li>
-                <li class="menu_item"><a href="../../en/php/LeyesVigentes.php" class="menu_link">Anglais</a>
-                </li>
-                <li class="menu_item"><a href="LeyesVigentes.php" class="menu_link">Français</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="menu_item"><a href="buscar.php" class="menu_link">Chercher <i class="fas fa-search"></i> </a></li>
-            <li class="menu_item"><a href="#" class="menu_link">Backend</a></li>
-
-        </nav>
-        <script src="js/menu.js"></script>
-
-        <div id="mensaje-error">
-          <h1 id="titulo-error">Contenu non disponible en Français</h1>
+    <header>
+      <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.sgjd.gob.hn/" target="_blank"><img class="logo1" src="../Img/secre.png"></a>
+          <a href="../index.php"><img class="logo2" src="../Img/logo.jpg"></a>
         </div>
+      </nav>
+    </header>
 
-            <h1 class="titulo-middle">Lois en Vigueur</h1>
+<!-- Menu vertical con opciones-->
 
 
-        <div class="clearfix" id="contenedor">
-          <div id="left">
-            <div id="portada">
-              <img id="img1" src="../../Img/Ley.jpg">
-            </div>
-            <div class="contenido">
-              <a href="https://www.tsc.gob.hn/web/leyes/Decreto-7-2021.pdf"  id="link1" target="_blank"><b> Ley de la Agencia de Regulacion Sanitaria (ARSA) <i class="fas fa-download"></i></b></a>
-              <br>
-              <br>
-              <br>
-              <a href="https://45bd611a-9c3b-470e-bde1-16e0393d88eb.filesusr.com/ugd/564166_3f179d42b2a5402a8421d191f50c1639.pdf" target="_blank" id="link1"><b>Ley de uso obligatorio de mascarillas y aplicación Protocolo de Bioseguridad <i class="fas fa-download"></i></b></a>
-              <br>
-              <br>
-              <br><br>
-              <a href="https://45bd611a-9c3b-470e-bde1-16e0393d88eb.filesusr.com/ugd/564166_80609851e46a4b85a9c79bbbabf3e86a.pdf" id="link1" target="_blank"><b> Ley Especial de Aceleración Económica y Protección Social Frente a los Efectos del Coronavirus COVID-19 <i class="fas fa-download"></i></b></a>
-              <br>
-              <br><br><br>
-              <a href="#" id="link1" target="_blank"><b>Ley de Auxilio al Sector Productivo y a Los Trabajadores ante los efectos de la Pandemia provocada por el COVID-19​ <i class="fas fa-download"></i></b></a>
-              <br>
-              <br><br><br>
-            </div>
+<div class="pastel">
+  <nav class="menu" id="menu">
+    <ul class="lista">
+      <li><a href="../index.php" class="adb"><i class="fas fa-home"></i>   Home</a></li>
+      <li><a href="#" class="adb"><i class="fas fa-globe-americas"></i>  Language</a>
+        <ul class="slide">
+          <li><a href="../../php/leyesAntiguas.php" class="adb">Spanish</a></li>
+          <li><a href="leyesVigentes.php" class="adb">English</a></li>
+          <li><a href="fr/index.php" class="adb">French</a></li>
+        </ul>
+      </li>
+      <li><a href="buscar.php" class="adb"><i class="fas fa-search"></i>  Search</a></li>
+      <li><a href="http://www.lagaceta.hn/index.php?option=com_flippingbook&view=book&id=1001&page=1&Itemid=109" class="adb" target="_blank"><i class="fas fa-newspaper"></i>  Diario Oficial La Gaceta</a></li>
+      <li><a href="https://www.sgjd.gob.hn/quienes-somos/informacion-institucional/marco-estrategico-mision-vision-y-objetivos" class="adb" target="_blank"><i  class="fas fa-info"></i>   About</a></li>
+    </ul>
+
+
+  </nav>
+
+
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</div>
+
+      <div id="mensaje-error">
+        <h2 id="titulo-error">Contenu non disponible en français</h2>
+      </div>
+
+      <!-- Columnas Librerias -->
+
+
+      <h1 class="titulo-middle">Information Legale</h1>
+
+
+      <div id="contenedor" class="clearfix">
+
+        <div id="left">
+          <div id="portada">
+            <img id="img1" src="../Img/Ley.jpg">
+          </div>
+          <div id="titulo">
+            <a href="php/leyesVigentes.php" class="div-h3"><h3>Leyes Vigentes</h3></a>
+          </div>
+          <div id="contenido">
+            <table style="border: 0.5px solid black;">
+              <tr>
+                <th colspan="3" style="font-family: sans-serif; text-align:center; color:#18567D; border: 0.5px solid black;">Nombre de la Ley</th>
+                <th colspan="1" style="font-family: sans-serif; text-align:left; color:#18567D; border: 0.5px solid black;">Descargar</th>
+              </tr>
+              <tr>
+                <th colspan="4" style="font-family: sans-serif; text-align:center; color:#18567D; border: 0.5px solid black;">Leyes 2020</th>
+              </tr>
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley Especial de Apoyo a los Migrantes Hondureños en el Marco del Covid-19​</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black;  text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/LeyEspecialdeApoyoalosMigrantesHondure%c3%b1osenelMarcodelCovid19.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley Especial de Aceleración Económica y Proteccion Social Frente a Efectos del Covid-19</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/LeyEspecAceleracionEconyProteccionSocialFrenteaEfectosdelCovid19.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley del Heroico y Benemerito Cuerpo de Bomberos de Honduras</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/LeydelHeroicoyBenemeritoCuerpodeBomberosdeHonduras.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley Marco de Vivienda y Asentamientos Humanos</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/LeyMarcodeViviendayAsentamientosHumano.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <th colspan="4" style="font-family: sans-serif; text-align:center; color:#18567D; border: 0.5px solid black;">Leyes 2019</th>
+              </tr>
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley Especial para la Gestion Asignacion Ejecucion liquidacion y Rendicion de Cuentas de Fondos Publicos​</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black;  text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/LeyEspecialparalaGestionAsignacionEjecucionliquidacionyRendiciondeCuentasdeFondosPublicos.pdf" target="_blank" ><i class="fas fa-download"></i></a> </td>
+              </tr>
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley de Alivio de Deuda para los Trabajadores</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/Ley%20de%20Alivio%20de%20Deuda%20para%20los%20Trabajadores.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">​Ley de Cinematografia de Honduras</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/Ley%20de%20Cinematografia%20de%20Honduras.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <td colspan="3" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Ley de Fortalecimiento del Sector Productivo de la Palma Aceitera</td>
+                <td colspan="1" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="http://www.poderjudicial.gob.hn/CEDIJ/Leyes/Documents/Ley%20de%20Fortalecimiento%20del%20Sector%20Productivo%20de%20la%20Palma%20Aceitera.pdf" target="_blank"><i class="fas fa-download"></i></a> </td>
+              </tr>
+            </table>
           </div>
         </div>
 
 
+        <div id="right">
+          <div id="portada">
+            <img id="img" src="../Img/leyes-honduras.jpg">
+          </div>
+          <div id="titulo">
+            <h3><a href="php/leyesAntiguas.php" class="div-h3">Codigos</a></h3>
+          </div>
+          <div id="contenido">
+            <table style="border: 0.5px solid black;">
+              <tr >
+                <th colspan="3" style="font-family: sans-serif; text-align:center; color:#18567D; border: 0.5px solid black;">Nombre del Codigo</th>
+                <th colspan="2" style="font-family: sans-serif; text-align:left; color:#18567D; border: 0.5px solid black;">Descargar</th>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Código de Conducta Ética del Docente Hondureño</td>
+                <td colspan="2" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="#" ><i class="fas fa-download"></i></a> </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Codigo Penal 2019</td>
+                <td colspan="2" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="#" ><i class="fas fa-download"></i></a> </td>
+              </tr>
 
-        <!-- Columna Redes Sociales -->
+              <tr>
+                <td colspan="2" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;"> Reformas al Codigo Penal (Decreto No. 119-2019)</td>
+                <td colspan="2" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="#" ><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <td colspan="2" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Código Procesal Civil</td>
+                <td colspan="2" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="#" ><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+              <tr>
+                <td colspan="2" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Reformas al Código Procesal Civil (decreto No. 21-2015)</td>
+                <td colspan="2" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="#" ><i class="fas fa-download"></i></a> </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-family: sans-serif; text-align:left; border: 0.5px solid black;">Fe Errata decreto No. 21-2015</td>
+                <td colspan="2" style="font-family: sans-serif; text-align:center; border: 0.5px solid black; text-decoration:none; color:black"><a href="#" ><i class="fas fa-download"></i></a> </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
 
 
-            <div class="redes">
-
-              <div class="social">
-                <a href="#"><i class="fab fa-facebook fa-3x blueicon"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-3x twit"></i></a>
-                <a href="#"><i class="fab fa-youtube fa-3x yt"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-3x ig"></i></a>
-              </div>
-
-            </div>
+<!-- Columna Redes Sociales -->
 
 
-            <!-- Footer -->
+    <div class="redes">
+      <div class="social">
+        <a href="https://es-la.facebook.com/sgjdHonduras/" target="_blank"><i class="fab fa-facebook fa-3x blueicon"></i></a>
+        <a href="https://twitter.com/sgjd_honduras" target="_blank"><i class="fab fa-twitter fa-3x twit"></i></a>
+        <a href="https://www.youtube.com/sgjdHonduras" target="_blank"><i class="fab fa-youtube fa-3x yt"></i></a>
+        <a href="https://www.instagram.com/explore/locations/1018126491/honduras/tegucigalpa-honduras/secretaria-de-gobernacion-justicia-y-descentralizacion/?hl=es" target="_blank"><i class="fab fa-instagram fa-3x ig"></i></a>
+      </div>
 
-            <div class="footer">
-              <h4 class=tituloFoot>Secretaria de Gobernacion y Justicia</h4>
-              <p class="dir">Centro Civico Gubernamental Jose Cecilio del Valle <br>Bulevar Juan Pablo Segundo </p>
-            </div>
+    </div>
 
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <h4 class=tituloFoot>Secretaria de Gobernacion y Justicia</h4>
+      <p class="dir">Centro Civico Gubernamental Jose Cecilio del Valle <br>Bulevar Juan Pablo Segundo </p>
+    </div>
   </body>
 </html>

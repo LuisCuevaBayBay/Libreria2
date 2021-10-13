@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>National Legal Library</title>
-    <link rel="stylesheet" href="../css/estiloHome.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
@@ -21,25 +21,30 @@
 
 <!-- Menu vertical con opciones-->
 
-      <span class="nav-bar" id=""btnMenu><i class="fas fa-bars"></i> Menu</span>
-      <nav class="main-nav">
-        <ul class="menu" id="menu">
-          <li class="menu_item container-submenu">
-            <a href="#" class="menu_link submenu-btn">Language <i class="fas fa-angle-down"></i></a>
-            <ul class="submenu">
-              <li class="menu_item"><a href="../index.php" class="menu_link">Spanish</a></li>
-              <li class="menu_item"><a href="index.php" class="menu_link">English</a></li>
-              <li class="menu_item"><a href="../fr/index.php" class="menu_link">French</a> </li>
-            </ul>
-          </li>
-
-          <li class="menu_item"><a href="php/buscar.php" class="menu_link">Search <i class="fas fa-search"></i> </a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Backend</a></li>
+<div class="pastel">
+  <nav class="menu" id="menu">
+    <ul class="lista">
+      <li><a href="index.php" class="adb"><i class="fas fa-home"></i>   Home</a></li>
+      <li><a href="#" class="adb"><i class="fas fa-globe-americas"></i>  Language</a>
+        <ul class="slide">
+          <li><a href="Index.php" class="adb">Spanish</a></li>
+          <li><a href="en/index.php" class="adb">English</a></li>
+          <li><a href="fr/index.php" class="adb">French</a></li>
         </ul>
-      </nav>
-      <script type="text/javascript">
+      </li>
+      <li><a href="php/buscar.php" class="adb"><i class="fas fa-search"></i>  Search</a></li>
+      <li><a href="http://www.lagaceta.hn/index.php?option=com_flippingbook&view=book&id=1001&page=1&Itemid=109" class="adb" target="_blank"><i class="fas fa-newspaper"></i>  Diario Oficial La Gaceta</a></li>
+      <li><a href="https://www.sgjd.gob.hn/quienes-somos/informacion-institucional/marco-estrategico-mision-vision-y-objetivos" class="adb" target="_blank"><i  class="fas fa-info"></i>   About</a></li>
+    </ul>
 
-      </script>
+
+  </nav>
+
+
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</div>
 
 
       <!-- Columnas Librerias -->
@@ -55,13 +60,13 @@
             <img id="img1" src="../Img/Ley.jpg">
           </div>
           <div id="titulo">
-            <a href="#" class="div-h3"><h3>Current Laws</h3></a>
+            <a href="php/LeyesVigentes.php" class="div-h3"><h3>Current Laws</h3></a>
           </div>
           <div id="contenido">
             <ul>
-              <a href="#" class="div-a"><li>Constitution of the Republic of Honduras(1982)</li></a><br>
-              <a href="#" class="div-a"><li>Municipalaties Law(2020)</li></a><br>
-              <a href="#" class="div-a"><li>Social Security Law(2021)</li></a><br>
+              <a href="php/LeyesVigentes.php" class="div-a"><li>Constitution of the Republic of Honduras(1982)</li></a><br>
+              <a href="php/LeyesVigentes.php" class="div-a"><li>Municipalaties Law(2020)</li></a><br>
+              <a href="php/LeyesVigentes.php" class="div-a"><li>Social Security Law(2021)</li></a><br>
             </ul>
           </div>
         </div>
@@ -72,13 +77,13 @@
             <img id="img" src="../Img/leyes-honduras.jpg">
           </div>
           <div id="titulo">
-            <h3><a href="#" class="div-h3">Ancient Laws</a></h3>
+            <h3><a href="php/LeyesAntiguas.php" class="div-h3">Ancient Laws</a></h3>
           </div>
           <div id="contenido">
             <ul>
-              <li><a href="#" class="div-a">Constitution of the Republic of Honduras(1894)</a></li><br>
-              <li><a href="#" class="div-a">Work code(1959)</a></li><br>
-              <li><a href="#" class="div-a">Public Education Agreements(1960)</a></li><br>
+              <li><a href="php/LeyesAntiguas.php" class="div-a">Constitution of the Republic of Honduras(1894)</a></li><br>
+              <li><a href="php/LeyesAntiguas.php" class="div-a">Work code(1959)</a></li><br>
+              <li><a href="php/LeyesAntiguas.php" class="div-a">Public Education Agreements(1960)</a></li><br>
             </ul>
           </div>
         </div>

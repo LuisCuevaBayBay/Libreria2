@@ -1,11 +1,7 @@
 *{
   box-sizing: border-box;
-}
-
-
-body{
   margin: 0;
-
+  padding: 0;
 }
 
 .logo1{
@@ -23,93 +19,118 @@ body{
   margin-left: 30%;
 }
 
-.nav-bar{
-  background: #123a63;
-  padding: 20px;
-  display: block;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5em;
-  width: 100%;
+/* Barra de Navegacion */
 
+.pastel{
+  background: #0a415c;
 }
 
-.menu, .submenu{
+.pastel nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+
+.pastel nav ul{
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
-
-.menu{
-  background: #123a63;
-  width: 100%;
-  margin-left: -100%;
-  transition: all 0.5;
-}
-
-.menu_link{
-  display: block;
-  padding: 10px;
-  color: white;
-  font-size: 1.2em;
+.adb{
   text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 4px 40px;
+  display: block;
+}
+
+.adb:hover{
+    background:#0a415c;
+}
+
+.pastel nav ul li ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.pastel nav ul li ul{
+  position: absolute;
+  background: #096999;
+}
+
+.pastel nav ul li ul li{
+  width: 130px;
+  position: relative;
+}
+
+.pastel nav ul li ul li ul{
+  top: 0;
+  left:180px;
+  position: absolute;
+
+
+}
+
+.pastel nav ul li ul{
+  display: none;
+}
+.pastel nav ul li:hover > ul{
+  display: block;
+}
+
+#boton{
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
   cursor: pointer;
-  margin-left: 325px;
-  text-align: center;
-
+  display: none;
 }
 
-.submenu{
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s;
+
+@media screen and (max-width:850px){
+    #boton{
+      display: block;
+    }
+    .pastel{
+      width: 350px;
+      height: calc(100vh - 60px);
+      background:  #0a415c;
+      position: absolute;
+      transition: all 1s;
+      left: -200%;
+      overflow: scroll;
+    }
+
+    .lista{
+      flex-direction: column;
+    }
+
+    .slide{
+      position: relative;
+      top:0;
+      display: none;
+      width: 100%;
+    }
+
+    .slide ul{
+      position: relative;
+      top: 0;
+      left: 0;
+    }
 }
 
-.submenu .menu_link{
-  background: #427d90;
-  padding-left: 10px;
-  padding-right: 100px;
-  margin-top: -20px;
-}
 
-.mostrar{
-  margin-left: 0;
-}
 
-@media(min-width:1024px){
-  .nav-bar{
-    display: none;
-  }
 
-  .menu{
-    margin-left: 0;
-    display: flex;
-  }
-
-  .container-submenu{
-    position: relative;
-  }
-
-  .submenu{
-    position: absolute;
-    top: 62px;
-    width: 200px;
-    overflow: visible;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .container-submenu:hover .submenu{
-    opacity: 1;
-    visibility: visible;
-  }
+/* Contenedor Librerias*/
 
  #contenedor{
    display: block;
  }
 
-}
+
 #contenedor{
   overflow: auto;
   width: 100%;
@@ -117,6 +138,8 @@ body{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
 }
+
+
 
 #left, #right{
   width: 40%;
@@ -128,33 +151,18 @@ body{
 }
 
 #left{
-  float: center;
+  float: left;
   padding-left: 20px;
-  margin-left: 35%;
-  width: 30%;
+  margin-left: 400px;
+  width: 45%;
   height: 20;
   border-style: solid;
   border-width: 1px;
   border-color: black;
-  margin-right: 50%;
-  text-decoration: none;
-  margin-top: 0px;
-}
-
-#link1{
-  color:  #123a63;
-  text-decoration: none;
-  font-family: sans-serif;
-  float: right;
-}
-
-#list{
-  color: #123a63;
-  align-content: left;
 }
 
 #right{
-  float: center;
+  float: right;
   padding-right: 20px;
   margin-right: 200px;
   width: 45%;
@@ -185,16 +193,11 @@ body{
   color:  #123a63;
 }
 
-.Listar{
-
-}
-
 .titulo-middle{
   text-align: center;
   font-family: sans-serif;
   color:  #123a63;
-  margin-top: 60px;
-
+  margin-top: 100px;
 }
 
 .redes{
@@ -206,8 +209,6 @@ body{
   display: inline-block;
 
 }
-
-
 .social{
   margin-left: 40%;
   padding: 8px;
@@ -215,9 +216,9 @@ body{
   margin-left: 40%;
 }
 
-
 .blueicon{
   color:#123a63;
+
 }
 .twit{
   color: #123a63;
@@ -248,24 +249,7 @@ body{
   color: white;
 }
 
-.lista{
-  margin-left: 20%;
-  border-radius: 1px;
-  border-color: black;
-}
+@media screen and (max-width:850px){
 
 
-#mensaje-error{
-  width: 100%;
-  background-color: #CDCDCD;
-  height: 40px;
-  margin-top: -11px;
-}
-
-#titulo-error{
-  text-align: center;
-  color: #A50044;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-style: bold;
 }
