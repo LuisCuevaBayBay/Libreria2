@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="Img/secre.png">
 
   </head>
   <body>
@@ -38,6 +39,7 @@
             <li><a href="php/buscarScreen.php" class="adb"><i class="fas fa-search"></i>  Buscar</a></li>
             <li><a href="http://www.lagaceta.hn/index.php?option=com_flippingbook&view=book&id=1001&page=1&Itemid=109" class="adb" target="_blank"><i class="fas fa-newspaper"></i>  Diario Oficial La Gaceta</a></li>
             <li><a href="https://www.sgjd.gob.hn/quienes-somos/informacion-institucional/marco-estrategico-mision-vision-y-objetivos" class="adb" target="_blank"><i  class="fas fa-info"></i>   Acerca de</a></li>
+            <li><a href="backend/index.php" class="adb"><i class="fas fa-desktop"></i> Backend</a></li>
           </ul>
 
 

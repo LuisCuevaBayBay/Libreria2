@@ -1,0 +1,80 @@
+body{
+  background-color: #9c9c9c;
+  font-family: Arial;
+}
+
+form{
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 1em;
+}
+
+form input{
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form a{
+  background: lightgrey;
+  padding: 0.7em;
+  width: 90%;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+
+form a:hover{
+  background: gold;
+}
+
+
+label{
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input{
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input:focus{
+  outline: 3px solid gold;
+}
+
+h2{
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.error{
+  background: red;
+  color:white;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+
+@media(min-width:400px){
+  form {
+  grid-template-columns: 200px 1fr;
+  grid-gap: 16px;
+}
+
+label {
+  text-align: right;
+  grid-column: 1 / 2;
+}
+
+input,
+a {
+  grid-column: 2 / 3;
+}
+}

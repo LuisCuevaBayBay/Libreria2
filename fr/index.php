@@ -24,17 +24,17 @@
 <div class="pastel">
   <nav class="menu" id="menu">
     <ul class="lista">
-      <li><a href="index.php" class="adb"><i class="fas fa-home"></i>   Inicio</a></li>
-      <li><a href="#" class="adb"><i class="fas fa-globe-americas"></i>  Idioma</a>
+      <li><a href="index.php" class="adb"><i class="fas fa-home"></i>   Page Principal</a></li>
+      <li><a href="#" class="adb"><i class="fas fa-globe-americas"></i>  Langage</a>
         <ul class="slide">
-          <li><a href="Index.php" class="adb">Español</a></li>
-          <li><a href="en/index.php" class="adb">Ingles</a></li>
-          <li><a href="fr/index.php" class="adb">Frances</a></li>
+          <li><a href="Index.php" class="adb">Espagnol</a></li>
+          <li><a href="en/index.php" class="adb">Anglais</a></li>
+          <li><a href="fr/index.php" class="adb">Francais</a></li>
         </ul>
       </li>
-      <li><a href="php/buscarScreen.php" class="adb"><i class="fas fa-search"></i>  Buscar</a></li>
+      <li><a href="php/buscarScreen.php" class="adb"><i class="fas fa-search"></i>  Chercher</a></li>
       <li><a href="http://www.lagaceta.hn/index.php?option=com_flippingbook&view=book&id=1001&page=1&Itemid=109" class="adb" target="_blank"><i class="fas fa-newspaper"></i>  Diario Oficial La Gaceta</a></li>
-      <li><a href="https://www.sgjd.gob.hn/quienes-somos/informacion-institucional/marco-estrategico-mision-vision-y-objetivos" class="adb" target="_blank"><i  class="fas fa-info"></i>   Acerca de</a></li>
+      <li><a href="https://www.sgjd.gob.hn/quienes-somos/informacion-institucional/marco-estrategico-mision-vision-y-objetivos" class="adb" target="_blank"><i  class="fas fa-info"></i>   À propos</a></li>
     </ul>
 
 
@@ -53,7 +53,6 @@
 
 
       <div id="contenedor" class="clearfix">
-
         <div id="left">
           <div id="portada">
             <img id="img1" src="../Img/Ley.jpg">

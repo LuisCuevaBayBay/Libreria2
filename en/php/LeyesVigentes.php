@@ -122,7 +122,7 @@
 
         <div id="right">
           <div id="portada">
-            <img id="img" src="../Img/leyes-honduras.jpg">
+            <img id="img1" src="../Img/leyes-honduras.jpg">
           </div>
           <div id="titulo">
             <h3><a href="php/leyesAntiguas.php" class="div-h3">Codigos</a></h3>

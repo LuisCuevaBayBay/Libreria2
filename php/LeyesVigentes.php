@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Libreria Juridica Nacional</title>
+    <link rel="shortcut icon" href="../Img/secre.png">
     <link rel="stylesheet" href="../css/lawsStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
