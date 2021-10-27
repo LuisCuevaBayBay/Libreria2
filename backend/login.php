@@ -31,20 +31,25 @@ if(isset($_POST['Uname']) && isset($_POST['Pass'])){
     if (mysqli_num_rows($result) === 1) {
       $row = mysqli_fetch_assoc($result);
       if($row['correo'] === $uname && $row['pass'] === $pass2){
-        header("Location: addLey.php");
+          header("Location: mainMenu.html");
+          $_SESSION['correo'] = $row['correo'];
+          $_SESSION['nombre'] = $row['nombre'];
+          $_SESSION['apellido'] = $row['apellido'];
+          $_SESSION['id'] = $row['id'];
+
       }else{
-        header("Location: index.php?error= Usuario o Contraseña Incorrecta");
+        header("Location: index.html?error= Usuario o Contraseña Incorrecta");
         exit();
       }
 
 
     }else{
-      header("Location: index.php?error= Usuario o Contraseña Incorrecta");
+      header("Location: index.html?error= Usuario o Contraseña Incorrecta");
       exit();
     }
   }
 }else{
-  header("Location: index.php");
+  header("Location: index.html");
   exit();
 }
  ?>

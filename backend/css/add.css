@@ -61,6 +61,18 @@ h2{
   border-radius: 5px;
 }
 
+#log:hover{
+  background: gold;
+}
+#log{
+  width: 300px;
+  height: 30px;
+  border:none;
+  border-radius: 17px;
+  padding-left: 7px;
+  color: blue;
+}
+
 
 @media(min-width:400px){
   form {
@@ -78,3 +90,4 @@ a {
   grid-column: 2 / 3;
 }
 }
+
