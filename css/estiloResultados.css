@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../Img/fondoprueba3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+body:before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, gray,white);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+h1{
+    font-family: arial,sans-serif;
+    font-size: 24px;
+    color: #006699;
+    text-align: center;
+}
+
+a{
+    font-family: arial,sans-serif;
+    font-size: 24px;
+    color: #006699;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-top: 50%;
+}
+
+td{
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+th{
+    font-family: arial,sans-serif;
+    font-size: 24px;
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+table{
+    margin-left: 5%;
+}
+a:hover{
+    color: gold;
+}

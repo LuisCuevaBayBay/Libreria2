@@ -41,7 +41,7 @@
         <input type="text" name="numArticulo" id="numArticulo">
 
         <label>Escriba la Descripcion de la Ley</label>
-        <textarea name="descripcion" id="descripcion" cols="30" rows="8"></textarea>
+        <textarea name="descripcionLey" id="descripcionLey" cols="30" rows="8"></textarea>
 
         <label>Seleccione el tipo de Ley</label>
         <select name="tipoLey" id="tipoLey">
@@ -70,6 +70,7 @@
         </select>
 
         <button type="submit" name="button" id="log">Guardar</button>
+        <a href="mainMenu.html">Volver al Menu Principal</a>
     </form>
     
 </body>

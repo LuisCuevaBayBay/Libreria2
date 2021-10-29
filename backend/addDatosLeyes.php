@@ -11,7 +11,9 @@ $date = $_POST['fechaVigencia'];
 $date2 = date('Y-m-d' , strtotime($date));
 
 $version = $_POST['version'];
-$sql = "INSERT INTO datos_generales_leyes (id, nombre_ley, id_ente_emisor, fecha_de_vigencia, version_ley) VALUES (NULL,'$name', '$type', '$date2', '$version')";
+
+$link = $_POST['link'];
+$sql = "INSERT INTO datos_generales_leyes (id, nombre_ley, id_ente_emisor, fecha_de_vigencia, version_ley, link) VALUES (NULL,'$name', '$type', '$date2', '$version', '$link')";
 $result = mysqli_query($conn, $sql);
 
  /* if($result){

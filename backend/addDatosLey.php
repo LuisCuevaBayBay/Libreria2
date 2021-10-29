@@ -35,9 +35,12 @@ include 'config.php';
 
       <label>Version</label>
       <input type="text" name="version"> 
+
+      <label>Link de descarga</label>
+      <input type="text" name="link">
       
       <button type="submit" name="button" id="log">Guardar</button>
-      <a href="index.php">Cerrar Sesion</a>
+      <a href="mainMenu.html">Regresar al Menu Principal</a>
     </form>
   </body>
 </html>

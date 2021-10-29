@@ -12,8 +12,9 @@
     </head>
 
     <body>
+      <form action="buscarSettings.php" method="post">
       <div class="search-container">
-        <input type="text" name="search" placeholder="Busca la ley que necesites..." class="search-input">
+        <input type="text" name="search" id="search" placeholder="Busca la ley que necesites..." class="search-input">
         <a href="#" class="search-btn">
           <i class="fas fa-search"></i>
         </a>
@@ -22,6 +23,8 @@
       <div class="boton-volver">
         <a href="../index.php" class="back-btn">     Volver <i class="fas fa-arrow-left"></i> </a>
       </div>
+      </form>
+    
 
 
   </body>
