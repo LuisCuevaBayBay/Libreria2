@@ -62,5 +62,24 @@ label{
   border:none;
   border-radius: 17px;
   padding-left: 7px;
-  color: blue;
+  color:green;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#cerrar{
+  text-decoration:none; 
+  font-weight:bold; 
+  color:white; 
+  font-size:15px; 
+  background-color:#f44336; 
+  padding: 14px 25px; 
+  display:inline-block; 
+  text-align:center;
+  border:none;
+  border-radius:17px;
+}
+
+#cerrar:hover{
+  background: gold;
 }

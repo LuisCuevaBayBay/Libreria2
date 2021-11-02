@@ -13,20 +13,21 @@ if($_POST['search']){
 <tr>
     <th width="200px" text-align="center" colspan="3"><strong>Nombre de la Ley</strong></th>
     <th width="1000px" text-align="center" colspan="3"><strong>Descripcion del Articulo</strong></th>
-    <th width="10px" text-align="center"><strong>Link de Descarga</strong></th>
+    <th width="100px" text-align="center" colspan="3"><strong>Link de Descarga</strong></th>
 </tr>
 
 <?php
 $buscar = $_POST['search'];
 
-$sql = "SELECT * FROM ficha_ley WHERE descripcion_articulo like '%$buscar%'";
+$sql = "SELECT datos_generales_leyes.nombre_ley, ficha_ley.descripcion_articulo, datos_generales_leyes.link FROM ficha_ley 
+INNER JOIN datos_generales_leyes ON ficha_ley.id_datos_generales = datos_generales_leyes.id WHERE descripcion_articulo LIKE '%$buscar%'";
 $sql2 = mysqli_query($conn,$sql);
     while ($registro = mysqli_fetch_assoc($sql2)){
     ?>
     <tr>
-        <td class="estilo-tabla" width="200px" style="text-align:center" colspan="3"><?=$registro['id_datos_generales']?></td>
+        <td class="estilo-tabla" width="200px" style="text-align:center" colspan="3"><?=$registro['nombre_ley']?></td>
         <td class="estilo-tabla" width="1000px" style="text-align:left" colspan="3"><?=$registro['descripcion_articulo']?></td>
-        <td class="estilo-tabla" width="100px" style="text-align:left" colspan="1"><a href="<?=$registro['id_datos_generales']?>"><i class="fa fa-download"></i> </a></td>
+        <td class="estilo-tabla" width="100px"colspan="3"><a href="<?=$registro['link']?>"target="_blank"><i class="fa fa-download"></i> </a></td>
     </tr>
    <?php
     }

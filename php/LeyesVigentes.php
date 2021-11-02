@@ -36,6 +36,7 @@
       <li><a href="buscarScreen.php" class="adb"><i class="fas fa-search"></i>  Buscar</a></li>
       <li><a href="http://www.lagaceta.hn/index.php?option=com_flippingbook&view=book&id=1001&page=1&Itemid=109" class="adb" target="_blank"><i class="fas fa-newspaper"></i>    Diario Oficial La Gaceta</a></li>
       <li><a href="https://www.sgjd.gob.hn/" class="adb" target="_blank"><i  class="fas fa-info"></i>   Acerca de</a></li>
+      <li><a href="../backend/index.html" class="adb"><i class="fas fa-desktop"></i> Backend</a></li>
     </ul>
 
 

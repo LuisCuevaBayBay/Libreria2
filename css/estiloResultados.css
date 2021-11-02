@@ -34,6 +34,7 @@ a{
     text-decoration: none;
     margin-left: 45%;
     margin-top: 50%;
+    font-weight: bolder;
 }
 
 td{
@@ -42,6 +43,9 @@ td{
     color: black;
     border: 1px solid black;
     font-weight: bolder;
+    text-align: justify; 
+    text-justify: inter-word;
+    
 }
 th{
     font-family: arial,sans-serif;

@@ -31,25 +31,37 @@ if(isset($_POST['Uname']) && isset($_POST['Pass'])){
     if (mysqli_num_rows($result) === 1) {
       $row = mysqli_fetch_assoc($result);
       if($row['correo'] === $uname && $row['pass'] === $pass2){
-          header("Location: mainMenu.html");
+        echo '<script type="text/javascript">
+        alert("Inicio de sesion exitoso, bienvenido!");
+        window.location.href="mainMenu.html";
+        </script>';
           $_SESSION['correo'] = $row['correo'];
           $_SESSION['nombre'] = $row['nombre'];
           $_SESSION['apellido'] = $row['apellido'];
           $_SESSION['id'] = $row['id'];
 
       }else{
-        header("Location: index.html?error= Usuario o Contraseña Incorrecta");
-        exit();
+        echo '<script type="text/javascript">
+              alert("Error al iniciar sesion. Usuario o contraseña incorrectos");
+              window.location.href="index.html";
+              </script>';
+        
       }
 
 
     }else{
-      header("Location: index.html?error= Usuario o Contraseña Incorrecta");
-      exit();
+      
+      echo '<script type="text/javascript">
+      alert("Error al iniciar sesion. Usuario o contraseña incorrectos");
+      window.location.href="index.html";
+      </script>';
+     
     }
   }
 }else{
-  header("Location: index.html");
-  exit();
+        echo '<script type="text/javascript">
+              alert("Error al iniciar sesion. Usuario o contraseña incorrectos");
+              window.location.href="index.html";
+              </script>';
 }
  ?>

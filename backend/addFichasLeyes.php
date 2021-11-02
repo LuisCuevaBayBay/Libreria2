@@ -10,10 +10,11 @@
     $descripcion = $_POST['descripcion'];
     $tipoLey = $_POST['tipoLey'];
     $categoriaLey= $_POST['categoriaLey'];
+    $link = $_POST['link'];
 
     $sql = "INSERT INTO ficha_ley 
-    (id, id_datos_generales, id_datos_publicacion, num_articulo, descripcion_articulo, id_tipo_ley, id_categoria_ley ) VALUES
-     (NULL,'$nombreLey', '$gaceta', '$numArticulo', '$descripcionLey', '$tipoLey', '$categoriaLey')";
+    (id, id_datos_generales, id_datos_publicacion, num_articulo, descripcion_articulo, id_tipo_ley, id_categoria_ley,link ) VALUES
+     (NULL,'$nombreLey', '$gaceta', '$numArticulo', '$descripcionLey', '$tipoLey', '$categoriaLey','$link')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";

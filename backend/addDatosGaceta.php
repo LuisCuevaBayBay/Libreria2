@@ -7,6 +7,7 @@ if (isset($_POST['button'])){
     $fechaGaceta = $_POST['fechaGaceta'];
     $fechaGaceta2 = date("Y-m-d", strtotime($fechaGaceta));
     $numeroDecreto = $_POST['numeroDecreto'];
+    $link = $_POST['link'];
 
     $sql = "INSERT INTO datos_publicacion (id,num_Gaceta, fecha_publicacion, decreto) VALUES (NULL,'$numGaceta', '$fechaGaceta', '$numeroDecreto')";
 
