@@ -13,12 +13,14 @@
     $link = $_POST['link'];
 
     $sql = "INSERT INTO ficha_ley 
-    (id, id_datos_generales, id_datos_publicacion, num_articulo, descripcion_articulo, id_tipo_ley, id_categoria_ley,link ) VALUES
-     (NULL,'$nombreLey', '$gaceta', '$numArticulo', '$descripcionLey', '$tipoLey', '$categoriaLey','$link')";
+    (id, id_datos_generales, id_datos_publicacion, num_articulo, descripcion_articulo, id_tipo_ley, id_categoria_ley ) VALUES
+     (NULL,'$nombreLey', '$gaceta', '$numArticulo', '$descripcionLey', '$tipoLey', '$categoriaLey')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-        header("Location: addDatosLey.php");
+        echo '<script type="text/javascript">
+        alert("Datos guardados exitosamente!");
+        window.location.href="addFichaLey.php";
+        </script>';
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

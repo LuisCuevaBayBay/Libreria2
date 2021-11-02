@@ -28,10 +28,14 @@ $result = mysqli_query($conn, $sql);
   */
 
   if($result){
-    echo "Datos guardados correctamente";
-    header("Location: addDatosGaceta.html");
+    echo '<script type="text/javascript">
+        alert("Registro exitoso!");
+        window.location.href="addDatosGaceta.html";
+        </script>';
   }
   else{
-    echo "Error al guardar los datos";
-    echo mysqli_error($conn);
+    echo '<script type="text/javascript">
+    alert("Error al guardar los datos!");
+    window.location.href="addDatosLey.php";
+    </script>';
   }

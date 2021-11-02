@@ -13,7 +13,14 @@ if (isset($_POST['button'])){
 
     $result = mysqli_query($conn, $sql);
     if($result){
-        echo "Datos guardados correctamente";
-        header("Location: addFichaLey.php");
+        echo '<script type="text/javascript">
+        alert("Datos guardados exitosamente!");
+        window.location.href="addFichaLey.php";
+        </script>';
+    }else{
+        echo '<script type="text/javascript">
+        alert("Error al guardar los datos!");
+        window.location.href="addDatosGaceta.html";
+        </script>';
     }
 }

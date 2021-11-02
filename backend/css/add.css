@@ -1,6 +1,24 @@
 body{
-  background-color: #9c9c9c;
-  font-family: Arial;
+  margin: 0;
+  min-height: 100vh;
+ background-image: url(../../Img/fondoprueba3.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ font-family: Arial;
+}
+body:before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, gray,white);
+  opacity: 0.8;
+  z-index: -1;
 }
 
 form{
