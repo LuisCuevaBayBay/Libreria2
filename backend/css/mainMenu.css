@@ -4,6 +4,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    background-color: #151515;
   }
   
   .background-one {
@@ -29,19 +30,19 @@ body {
   }
   
   a {
-    font-family: "Bungee", cursive;
+    font-family: "Roboto", cursive;
     font-size: 2.5em;
   }
   
   .link-one {
-    color: #0a415c;
+    color: #004D98;
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
     line-height: 1em;
     text-decoration: none;
   }
   
   .link-one:hover {
-    color: #111;
+    color: white;
     transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
   
     /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
@@ -55,7 +56,7 @@ body {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: #0a415c;
+    background-color:  #A50044;
   
     clip-path: circle(0% at 50% calc(50%));
     transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
@@ -73,7 +74,7 @@ body {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: #151515;
+    background-color: #004D98;
   
     clip-path: polygon(
       40% 0%,
@@ -157,13 +158,13 @@ body {
   }
   
   .link-two {
-    color: white;
+    color: grey;
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
     text-decoration: none;
   }
   
   .link-two:hover {
-    color: #111;
+    color: white;
     transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
   }
   
@@ -185,7 +186,7 @@ body {
       100% 100%,
       0% 110%
     );
-    background-color: white;
+    background-color: #004D98;
   
     transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
   }
@@ -214,7 +215,7 @@ body {
     transform: translate(50%, -50%) rotate(0deg) scale(0);
     transition: transform 1s ease;
   
-    background-color: white;
+    background-color:#004D98;  
   }
   
   .link-two:hover::after {
@@ -222,7 +223,7 @@ body {
   }
   
   .link-three {
-    color: #096999;
+    color: #004D98;
     text-decoration: none;
   }
   
@@ -249,11 +250,11 @@ body {
       20% 20%
     );
   
-    background-color: #096999;
+    background-color: #004D98;
   }
   
   .link-three:hover::after {
-    transform: translate(0, 0%) scaleY(1);
+    color: white;
   }
   
   .link-three::before {
@@ -279,10 +280,26 @@ body {
       80% 80%
     );
   
-    background-color: #096999;
+    background-color:  #A50044;
   }
   
   .link-three:hover::before {
     transform: translate(0%, 0%) scaleY(1);
+  }
+
+  .link-four{
+    color: #004D98;
+    text-decoration: none;
+    background-color:#151515;
+  }
+  .background-four{
+    background-color:#151515;
+    width:100%;
+    margin-left: 90%;
+  }
+
+  .link-four:hover{
+    color: #A50044;
+    text-decoration: none;
   }
   

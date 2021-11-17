@@ -108,6 +108,7 @@
     }
 
     .slide{
+      padding-top: 100px;
       position: relative;
       top:0;
       display: none;
@@ -126,46 +127,53 @@
 
 /* Contenedor Librerias*/
 
- #contenedor{
-   display: block;
+ section{
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
  }
-
-
 #contenedor{
   overflow: auto;
   width: 100%;
   background: white;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  padding-top:30px;
+  margin: auto;
 }
 
-
-
 #left, #right{
-  width: 40%;
-  margin: 5px;
-  padding: 1em;
-  text-align: center;
-  margin-top: 5%;
+  width: 100%;
+  display: table;
+  padding: -100px;
+}
 
+#left, #right h3{
+  text-align: center;
+}
+
+#left, #right, ul li{
+  list-style: none;
+  padding:10px;
+  text-align: left;
 }
 
 #left{
-  float: left;
-  padding-left: 20px;
-  margin-left: 400px;
-  width: 45%;
-  height: 20;
+  margin:auto;
+  width: auto;
+  height: auto;
   border-style: solid;
   border-width: 1px;
+  
   border-color: black;
 }
 
 #right{
-  float: right;
-  padding-right: 20px;
-  margin-right: 200px;
-  width: 45%;
+  margin:auto;
+  height: auto;
+  width: auto;
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -177,6 +185,7 @@
 }
 #img{
   width: 100%;
+  height: 210px;
 }
 .div-a{
   text-decoration: none;

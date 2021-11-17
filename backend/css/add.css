@@ -87,7 +87,8 @@ h2{
   border:none;
   border-radius: 17px;
   height: 30px;
-  color:green;
+  color:white;
+  background: green;
   font-weight: bold;
   font-size: 15px;
   align-items: center;
