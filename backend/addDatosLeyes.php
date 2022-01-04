@@ -4,18 +4,22 @@ include 'config.php';
 
 $name = $_POST['nombreLey'];
 
-$type = $_POST['selectEnte'];
+$ente = $_POST['selectEnte'];
 
 $date = $_POST['fechaVigencia'];
 
 $date2 = date('Y-m-d' , strtotime($date));
 
-$version = $_POST['version'];
+$materia = $_POST['selectMateria'];
+
+$gaceta = $_POST['selectNumeroGaceta'];
 
 $link = $_POST['link'];
 
-$link = $_POST['link'];
-$sql = "INSERT INTO datos_generales_leyes (id, nombre_ley, id_ente_emisor, fecha_de_vigencia, version_ley, link) VALUES (NULL,'$name', '$type', '$date2', '$version', '$link')";
+$tipo_ley = $_POST['selectTipoLey'];
+
+$sql = "INSERT INTO datos_generales_leyes (id, nombre, id_ente, fecha_vigencia, id_tipo_ley, id_materia, id_gaceta, link)
+                                   VALUES (NULL,'$name','$ente', '$date2', '$tipo_ley', '$materia', '$gaceta', '$link')";
 $result = mysqli_query($conn, $sql);
 
  /* if($result){
@@ -23,7 +27,7 @@ $result = mysqli_query($conn, $sql);
   }
   else{
     echo "Error al guardar los datos";
-    
+
   }
   */
 

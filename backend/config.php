@@ -3,7 +3,7 @@ $name = "localhost";
 $user = "root";
 $password = "loquendo1";
 
-$db = "laws_db";
+$db = "bbdd_leyes_honduras";
 
 $conn = mysqli_connect($name, $user, $password, $db);
 

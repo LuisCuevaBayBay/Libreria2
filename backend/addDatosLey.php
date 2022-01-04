@@ -12,11 +12,13 @@ include 'config.php';
     <h2 style="font-size:28px;">Registrar Leyes</h2>
 
     <form class="" action="addDatosLeyes.php" method="post">
+      
       <label>Nombre Ley</label>
       <input type="text" name="nombreLey" value="" placeholder="Nombre de la Ley">
       <br>
+
       <label>Ente Emisor</label>
-      <select name="selectEnte" id="selectEnter">
+      <select name="selectEnte" id="selectEnte">
         <option value="">Seleccione una opción</option>
         <?php
         $sql = "SELECT * FROM ente";
@@ -33,9 +35,49 @@ include 'config.php';
       <input type="date" name="fechaVigencia" value="">
         <br>
 
-      <label>Version</label>
-      <input type="text" name="version"> 
+        <label>Seleccione el Tipo de Ley</label>
+        <select name="selectTipoLey" id="selectTipoLey">
+          <option value="">Seleccione una opción</option>
+          <?php
+          $sql = "SELECT * FROM tipo_ley";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+              echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+            }
+          }
+          ?>
+        </select>
         <br>
+        <label>Seleccione la materia de la ley</label>
+        <select name="selectMateria" id="selectMateria">
+          <option value="">Seleccione una opción</option>
+          <?php
+          $sql = "SELECT * FROM materia_ley";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+              echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+            }
+          }
+          ?>
+        </select>
+        <br>
+        <label>Seleccione el numero de publicacion en el Diario Oficial La Gaceta</label>
+        <select name="selectNumeroGaceta" id="selectNumeroGaceta">
+          <option value="">Seleccione una opción</option>
+          <?php
+          $sql = "SELECT * FROM datos_gaceta";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+              echo "<option value='".$row['id']."'>".$row['num_gaceta']."</option>";
+            }
+          }
+          ?>
+        </select>
+        <br>
+          
       <label>Link de Descarga</label>
       <input type="text" name="link"> 
 

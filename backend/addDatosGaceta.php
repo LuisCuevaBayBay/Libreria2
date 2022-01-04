@@ -9,7 +9,7 @@ if (isset($_POST['button'])){
     $numeroDecreto = $_POST['numeroDecreto'];
     
 
-    $sql = "INSERT INTO datos_publicacion (id,num_Gaceta, fecha_publicacion, decreto) VALUES (NULL,'$numGaceta', '$fechaGaceta', '$numeroDecreto')";
+    $sql = "INSERT INTO datos_gaceta (id,num_gaceta, fecha_publi, num_decreto) VALUES (NULL,'$numGaceta', '$fechaGaceta', '$numeroDecreto')";
 
     $result = mysqli_query($conn, $sql);
     if($result){
