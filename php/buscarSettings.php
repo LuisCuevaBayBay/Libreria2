@@ -42,4 +42,3 @@ $sql2 = mysqli_query($conn,$sql);
 <?
 }
 ?>
-

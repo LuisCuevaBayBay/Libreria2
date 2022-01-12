@@ -15,7 +15,7 @@ if (isset($_POST['button'])){
     if($result){
         echo '<script type="text/javascript">
         alert("Datos guardados exitosamente!");
-        window.location.href="addFichaLey.php";
+        window.location.href="mainMenu.html";
         </script>';
     }else{
         echo '<script type="text/javascript">

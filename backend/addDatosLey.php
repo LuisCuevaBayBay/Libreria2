@@ -25,7 +25,7 @@ include 'config.php';
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
-            echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+            echo "<option value='".$row['id']."'>".$row['descripcion_ente']."</option>";
           }
         }
         ?>  
@@ -43,7 +43,7 @@ include 'config.php';
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-              echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+              echo "<option value='".$row['id']."'>".$row['descripcion_tipo']."</option>";
             }
           }
           ?>
@@ -57,7 +57,7 @@ include 'config.php';
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-              echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+              echo "<option value='".$row['id']."'>".$row['descripcion_materia']."</option>";
             }
           }
           ?>
@@ -80,6 +80,9 @@ include 'config.php';
           
       <label>Link de Descarga</label>
       <input type="text" name="link"> 
+
+      <label for="">Escriba un resumen del contenido de la ley</label>
+      <textarea name="resumen" id="" cols="30" rows="10"></textarea>
 
       <br>
       <button type="submit" name="button" id="log">Guardar</button>

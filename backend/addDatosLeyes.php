@@ -18,8 +18,10 @@ $link = $_POST['link'];
 
 $tipo_ley = $_POST['selectTipoLey'];
 
-$sql = "INSERT INTO datos_generales_leyes (id, nombre, id_ente, fecha_vigencia, id_tipo_ley, id_materia, id_gaceta, link)
-                                   VALUES (NULL,'$name','$ente', '$date2', '$tipo_ley', '$materia', '$gaceta', '$link')";
+$resumen = $_POST['resumen'];
+
+$sql = "INSERT INTO datos_generales_leyes (id, nombre, id_ente, fecha_vigencia, id_tipo_ley, id_materia, id_gaceta, link, resumen)
+                                   VALUES (NULL,'$name','$ente', '$date2', '$tipo_ley', '$materia', '$gaceta', '$link', '$resumen')";
 $result = mysqli_query($conn, $sql);
 
  /* if($result){
@@ -34,12 +36,12 @@ $result = mysqli_query($conn, $sql);
   if($result){
     echo '<script type="text/javascript">
         alert("Registro exitoso!");
-        window.location.href="addDatosGaceta.html";
+        window.location.href="mainMenu.html";
         </script>';
   }
   else{
     echo '<script type="text/javascript">
     alert("Error al guardar los datos!");
-    window.location.href="addDatosLey.php";
+    window.location.href="addDatosGaceta.html";
     </script>';
   }

@@ -43,7 +43,7 @@ if(isset($_POST['Uname']) && isset($_POST['Pass'])){
       }else{
         echo '<script type="text/javascript">
               alert("Error al iniciar sesion. Usuario o contraseña incorrectos");
-              window.location.href="index.html";
+              window.location.href="index.php";
               </script>';
         
       }
@@ -53,7 +53,7 @@ if(isset($_POST['Uname']) && isset($_POST['Pass'])){
       
       echo '<script type="text/javascript">
       alert("Error al iniciar sesion. Usuario o contraseña incorrectos");
-      window.location.href="index.html";
+      window.location.href="index.php";
       </script>';
      
     }
@@ -61,7 +61,7 @@ if(isset($_POST['Uname']) && isset($_POST['Pass'])){
 }else{
         echo '<script type="text/javascript">
               alert("Error al iniciar sesion. Usuario o contraseña incorrectos");
-              window.location.href="index.html";
+              window.location.href="index.php";
               </script>';
 }
  ?>

@@ -15,45 +15,52 @@
     <body>
       <form action="buscarSettings.php" method="post">
       <div class="search-container">
-        <input type="text" name="search" id="search" placeholder="Busca la ley que necesites..." class="search-input">
-        <select class="" name="">
+     <input type="text" name="search" id="search" placeholder="Busca la ley que necesites..." class="search-input">
+
+     <select class="selectTipo" name="selectTipo">
           <option value="">Seleccion un Tipo de Ley</option>
           <?php
+          
             $sql = "SELECT * from tipo_ley";
             $result = $conn->query($sql);
             if ($result->num_rows>0) {
               while ($row = $result->fetch_assoc()) {
-                echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+                echo "<option value='".$row['id']."'>".$row['descripcion_tipo']."</option>";
               }
             }
+          
            ?>
         </select>
         <br>
-        <select class="" name="">
+        <select class="selectMateria" name="selectMateria">
           <option>Seleccione la materia de la ley</option>
           <?php
+          
             $sql = "SELECT * from materia_ley";
             $result = $conn->query($sql);
             if ($result->num_rows>0) {
               while ($row = $result->fetch_assoc()) {
-                echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+                echo "<option value='".$row['id']."'>".$row['descripcion_materia']."</option>";
               }
             }
+            
            ?>
         </select>
         <br>
-        <select class="" name="">
+        <select class="selectEnte" name="selectEnte">
           <option>Seleccione el ente que aprobo la ley</option>
           <?php
             $sql = "SELECT * from ente";
             $result = $conn->query($sql);
             if ($result->num_rows>0) {
               while ($row = $result->fetch_assoc()) {
-                echo "<option value='".$row['id']."'>".$row['descripcion']."</option>";
+                echo "<option value='".$row['id']."'>".$row['descripcion_ente']."</option>";
               }
             }
+            
            ?>
         </select>
+        
         <a href="#" class="search-btn">
           <i class="fas fa-search"></i>
         </a>
